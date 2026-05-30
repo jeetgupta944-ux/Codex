@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"/>
+    <link rel="stylesheet" href="style.css"/>
+    <title> HAPPY BIRTHDAY BACHAAA! </title>
+</head>
+<body>
+   <div class="top">
+        <h1> HAPPY BIRTHDAY BACHAAA! </h1>
+
+        <!-- AUDIO -->
+         <audio id="bgAudio" loop>
+            <source src="/Assets/cute_happy_birthday.mp3" type="audio/mpeg">
+         </audio>
+         
+         <!-- BUTTON -->
+          <div class="audio-container">
+            <button class="audio-btn" id="audioToggle"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 16 16" id="Mute--Streamline-Block-Free" height="16" width="16">
+  <desc>
+    Mute Streamline Icon: https://streamlinehq.com
+  </desc>
+  <path fill="#000000" d="M7.5 0 4.25 3.25 1 0 0 1l15 15 1 -1 -2.0503 -2.0503C15.2165 11.683 16 9.933 16 8c0 -3.86599 -3.134 -7 -7 -7v2.5c2.4853 0 4.5 2.01472 4.5 4.5 0 1.24264 -0.5037 2.3676 -1.318 3.182l-1.0607 -1.0607C11.6642 9.57843 12 8.82843 12 8c0 -1.65685 -1.3431 -3 -3 -3v3L7.5 6.5V0Z" stroke-width="1"></path>
+  <path fill="#000000" d="M7.5 10.5 1 4H0v8h3.5l4 4v-5.5Z" stroke-width="1"></path>
+</svg></button>
+          </div>
+    <div class="slider-container">
+        <div class="slide"><video src="/Assets/happybirthday v1.mp4" type="video/mp4" muted autoplay loop></video></div>
+        <div class="slide"><video src="/Assets/happybirthday v2.mp4" type="video/mp4" muted autoplay loop></video></div>
+        <div class="slide"><video src="/Assets/happybirthday v3.mp4" type="video/mp4" muted autoplay loop></video></div>
+        <div class="slide"><video src="/Assets/happybirthday v4.mp4" type="video/mp4" muted autoplay loop></video></div>
+
+        <!-- BUTTON -->
+         <button class="arrow left" onclick="changeSlide(-1)"><i class="fa-solid fa-chevron-left"></i></button>
+         <button class="arrow right" onclick="changeSlide(1)"><i class="fa-solid fa-chevron-right"></i></button>
+    </div>
+   </div> 
+
+   <div class="middle">
+     <!-- Photos List -->
+     
+     <div class="flip-container" id="flipContainer">
+
+     <div class="flip-box">
+      <div class="flip-box-inner">
+        <div class="flip-box-front">
+          <div>
+            <h3> HAPPY BIRTHDAY BACHAAA 🤍 </h3>
+            <p> Happy Birthday Bachaaa, I think you must be very happy, achieving everything you want. There are many things to say but you know I am not able to express them. I will wait for you to ask. Enjoy your best day, it is my wish that you get everything you want and I have some more surprises planned. </p>
+          </div>
+          <button class="flip-btn">Flip</button>
+        </div>
+        <div class="flip-box-back" style="background-image: url(/Assets/Birthday.png);">
+          <button class="flip-btn">Flip Back</button>
+        </div>
+      </div>
+     </div>
+
+     <div class="flip-box">
+      <div class="flip-box-inner">
+        <div class="flip-box-front">
+          <div>
+            <h3> MY FIRST HERO & BEST FRIEND </h3>
+            <p> He is an often the first male role model, setting the standard for self-esteem, security, and future relationships. He is a source of unconditional love and confidence-building, offering guidance that shapes her to feel capable and valuable. This bond provides an emotional safety net and a "hero" figure who encourages her to be strong and independent.
+            </p>
+          </div>
+          <button class="flip-btn">Flip</button>
+        </div>
+        <div class="flip-box-back" style="background-image: url('/Assets/papa_fav.jpeg');">
+          <button class="flip-btn">Flip Back</button>
+        </div>
+      </div>
+     </div>
+
+     <div class="flip-box">
+      <div class="flip-box-inner">
+        <div class="flip-box-front">
+          <div>
+            <h3> THE QUEEN OF OUR FAMILY 💌 </h3>
+            <p>A guiding hand leads a growing heart through every storm. They share a mirrored soul, where one’s smile is the other’s joy. It is a timeless promise of care, built on soft whispers and strong support. This sacred tie turns a house into a forever home.</p>
+          </div>
+          <button class="flip-btn">Flip</button>
+        </div>
+        <div class="flip-box-back" style="background-image: url('/Assets/Mum_fav.jpeg');">
+          <button class="flip-btn">Flip Back</button>
+        </div>
+      </div>
+     </div>
+
+     <div class="flip-box">
+      <div class="flip-box-inner">
+        <div class="flip-box-front">
+          <div>
+            <h3> MY FAVOURITE LITTLE GUY 💌 </h3>
+            <p> Having a big sister is like having a built-in protector and a lifelong best friend. She’s the one who navigates the world first, making things easier for me. We might bicker and tease each other, but I know she’ll always have my back and be my biggest supporter.
+          </p>
+          </div>
+          <button class="flip-btn">Flip</button>
+        </div>
+        <div class="flip-box-back" style="background-image: url('/Assets/LIL.jpeg');">
+          <button class="flip-btn">Flip Back</button>
+        </div>
+      </div>
+     </div>
+
+     <div class="flip-box">
+      <div class="flip-box-inner">
+        <div class="flip-box-front">
+          <div>
+            <h3> MY PARTNER IN CRIME 🔒 </h3>
+            <p> Having a brother as a partner in crime means always having a co-conspirator for life’s wildest ideas. From childhood mischief to adult adventures, he’s the one who turns every bad decision into a legendary story. He’s the keeper of your secrets and the first person you call when things go sideways. With him, trouble is just another word for fun.
+           </p>
+          </div>
+          <button class="flip-btn">Flip</button>
+        </div>
+        <div class="flip-box-back" style="background-image: url('/Assets/DRV.jpeg');">
+          <button class="flip-btn">Flip Back</button>
+        </div>
+      </div>
+     </div>
+
+     <div class="flip-box">
+      <div class="flip-box-inner">
+        <div class="flip-box-front">
+          <div>
+            <h3> THE FUN VERSION OF MOM 💌 </h3>
+            <p> A second mother who offers the warmth of a parent with the ease of a best friend. She’s the ultimate secret-keeper and the one who spoils you when your parents say no. From childhood snacks to adult advice, her unconditional love and constant support make life’s journey infinitely brighter and much more fun. </p>
+          </div>
+          <button class="flip-btn">Flip</button>
+        </div>
+        <div class="flip-box-back" style="background-image: url('/Assets/Maasi.jpeg');">
+          <button class="flip-btn">Flip Back</button>
+        </div>
+      </div>
+     </div>
+
+     <div class="flip-box">
+      <div class="flip-box-inner">
+        <div class="flip-box-front">
+          <div>
+            <h3> MY SOUL SISTER 💌 </h3>
+            <p> My little daughter is a beautiful reflection of her mother’s grace and warmth. She isn't just a cousin; she’s the younger sister I always wished for. Watching her grow is like seeing a tiny spark of pure joy light up our family. Whether we’re sharing secrets or playing games, she is my favorite little partner in mischief.
+           </p>
+          </div>
+          <button class="flip-btn">Flip</button>
+        </div>
+        <div class="flip-box-back" style="background-image: url('/Assets/Anaya.jpeg');">
+          <button class="flip-btn">Flip Back</button>
+        </div>
+      </div>
+     </div>
+
+     <div class="flip-box">
+      <div class="flip-box-inner">
+        <div class="flip-box-front">
+          <div>
+            <h3> THE ORIGINAL THE BEST DIDI 💌 </h3>
+            <p> The heart of the home, balancing the roles of a second mother and a lifelong best friend. She’s the one who shields you from trouble, offers the best advice, and somehow knows exactly how to fix everything. Her presence brings a unique sense of comfort and security, making every house feel like a home. </p>
+          </div>
+          <button class="flip-btn">Flip</button>
+        </div>
+        <div class="flip-box-back" style="background-image: url('/Assets/Elder.jpeg');">
+          <button class="flip-btn">Flip Back</button>
+        </div>
+      </div>
+     </div>
+
+     <div class="flip-box">
+      <div class="flip-box-inner">
+        <div class="flip-box-front">
+          <div>
+            <h3> THE SILENT LANGUAGE 💌 </h3>
+            <p> Looking into these eyes feels like finding a quiet sanctuary in a noisy world. They hold a rare comfort and peace that words simply cannot capture, reflecting a depth of understanding and kindness. There is a silent honesty in their gaze that speaks of unspoken thoughts and shared moments, making everything else feel just a little bit brighter. </p>
+          </div>
+          <button class="flip-btn">Flip</button>
+        </div>
+        <div class="flip-box-back" style="background-image: url('/Assets/EYE.jpeg');">
+          <button class="flip-btn">Flip Back</button>
+        </div>
+      </div>
+     </div>
+
+     <div class="flip-box">
+      <div class="flip-box-inner">
+        <div class="flip-box-front">
+          <div>
+            <h3> THE LAKSHMI OF THE HOUSE 💌 </h3>
+            <p> The love a family holds for their first daughter is a sacred mix of reverence and deep affection. As the household’s first-born Lakshmi, she is cherished as a divine blessing who brings prosperity and grace. Her family sees in her a pioneering spirit, a second mother, and a lifelong anchor, surrounding her with unconditional support and immense pride. </p>
+          </div>
+          <button class="flip-btn">Flip</button>
+        </div>
+        <div class="flip-box-back" style="background-image: url('/Assets/FAV_ONES.jpeg');">
+          <button class="flip-btn">Flip Back</button>
+        </div>
+      </div>
+     </div>
+
+     <div class="flip-box">
+      <div class="flip-box-inner">
+        <div class="flip-box-front">
+          <div>
+            <h3> PURE NOSTALGIA 💌 </h3>
+            <p> Growing up was a whirlwind of wonder, where the days felt long and the worries were small. From the taste of favorite treats to the comfort of old songs, those nostalgic fragments build a bridge to our youngest selves. It’s a timeless collection of joy that stays tucked away, ready to warm the heart at any moment.
+           </p>
+          </div>
+          <button class="flip-btn">Flip</button>
+        </div>
+        <div class="flip-box-back" style="background-image: url('/Assets/Childhood.jpeg');">
+          <button class="flip-btn">Flip Back</button>
+        </div>
+      </div>
+     </div>
+
+     <div class="flip-box">
+      <div class="flip-box-inner">
+        <div class="flip-box-front">
+          <div>
+            <h3> STOLEN MOMENTS 💌 </h3>
+            <p> A smile has a way of lighting up the entire room, framing her words with a natural grace that’s impossible to ignore. Whether she’s sharing a quiet laugh or a bold thought, there’s an effortless elegance in her expression. Her radiance is truly captivating, making every look feel like a unique work of art.
+           </p>
+          </div>
+          <button class="flip-btn">Flip</button>
+        </div>
+        <div class="flip-box-back" style="background-image: url('/Assets/Pound.jpeg');">
+          <button class="flip-btn">Flip Back</button>
+        </div>
+      </div>
+     </div>
+
+     <div class="flip-box">
+      <div class="flip-box-inner">
+        <div class="flip-box-front">
+          <div>
+            <h3> EMERALD ISLANDS OF INDIA 💌 </h3>
+            <p> The Emerald Isles are a breathtaking mosaic of lush jungles and shimmering turquoise waters. From the serene, white-sand shores to the vibrant coral reefs teeming with life, every corner feels like a pristine paradise. It’s a place where time slows down, letting you soak in the salty breeze and the rhythmic whisper of the untouched tides. </p>
+          </div>
+          <button class="flip-btn">Flip</button>
+        </div>
+        <div class="flip-box-back" style="background-image: url('/Assets/Andaman.jpeg');">
+          <button class="flip-btn">Flip Back</button>
+        </div>
+      </div>
+     </div>
+
+     <div class="flip-box">
+      <div class="flip-box-inner">
+        <div class="flip-box-front">
+          <div>
+            <h3> MY UNBIOLOGICAL SISTER 💌</h3>
+            <p> The one constant presence is the silent anchor through every storm and the loudest cheer in every triumph. She is the keeper of untold stories, transforming ordinary days into a vibrant collection of shared laughter. This unbreakable bond creates a sanctuary where you can truly be yourself, making every moment feel like home. </p>
+          </div>
+          <button class="flip-btn">Flip</button>
+        </div>
+        <div class="flip-box-back" style="background-image: url('/Assets/BestFriend.jpeg');">
+          <button class="flip-btn">Flip Back</button>
+        </div>
+      </div>
+     </div>
+
+     <div class="flip-box">
+      <div class="flip-box-inner">
+        <div class="flip-box-front">
+          <div>
+            <h3> BRO CODE LEGACY 💌 </h3>
+            <p> a brotherly best friend is the ultimate protector and partner-in-crime. This unique bond follows an unspoken code of loyalty, where teasing is constant but support is unwavering. He’s the one who offers a tough perspective and a safe shoulder, proving that family isn't always about blood—it’s about the brothers we choose. </p>
+          </div>
+          <button class="flip-btn">Flip</button>
+        </div>
+        <div class="flip-box-back" style="background-image: url(/Assets/Bro\ Code.jpeg);">
+          <button class="flip-btn">Flip Back</button>
+        </div>
+      </div>
+     </div>
+
+     <div class="flip-box">
+      <div class="flip-box-inner">
+        <div class="flip-box-front">
+          <div>
+            <h3> LEGACY MEETS LUXURY 💌 </h3>
+            <p>  It’s a timeless masterpiece that drapes a girl in unrivaled elegance. With every fold and pleat, it weaves together tradition and poise, highlighting a natural radiance that never fades. There is a unique power and grace in the way she carries those six yards, turning every movement into a beautiful statement.
+           </p>
+          </div>
+          <button class="flip-btn">Flip</button>
+        </div>
+        <div class="flip-box-back" style="background-image: url('/Assets/Saree.jpeg');">
+          <button class="flip-btn">Flip Back</button>
+        </div>
+      </div>
+     </div>
+
+     <div class="flip-box">
+      <div class="flip-box-inner">
+        <div class="flip-box-front">
+          <div>
+            <h3> ROYALTY IN EVERY STITCH 💌 </h3>
+            <p> the ultimate attire for a queen, turning every movement into a stately procession. Draped in rich fabrics and intricate jewels, she carries the legacy of royalty with effortless poise. It isn’t just an outfit; it’s a symbol of power and grace, making her the sovereign of every room she enters with timeless, radiant beauty. </p>
+          </div>
+          <button class="flip-btn">Flip</button>
+        </div>
+        <div class="flip-box-back" style="background-image: url('/Assets/Lehenga.jpeg');">
+          <button class="flip-btn">Flip Back</button>
+        </div>
+      </div>
+     </div>
+
+     <div class="flip-box">
+      <div class="flip-box-inner">
+        <div class="flip-box-front">
+          <div>
+            <h3> DESI GIRL MAGIC 💌 </h3>
+            <p> She carries this look with a natural grace that makes everyone stop and stare. It’s the perfect mix of simplicity and style, highlighting her glowing confidence. Every detail seems to fit her vibrant personality perfectly, making her look both powerful and incredibly kind. She doesn't just wear the outfit; she makes it truly come alive.
+            </p>
+          </div>
+          <button class="flip-btn">Flip</button>
+        </div>
+        <div class="flip-box-back" style="background-image: url('/Assets/Suit.jpeg');">
+          <button class="flip-btn">Flip Back</button>
+        </div>
+      </div>
+     </div>
+
+     <div class="flip-box">
+      <div class="flip-box-inner">
+        <div class="flip-box-front">
+          <div>
+            <h3> TOP TIER OF ALL TIME 💌 </h3>
+            <p> Each photo here holds a unique memory, handpicked with love because every look tells a different story. While I cherish them all, your sparkling eyes and radiant smile are the beautiful common threads in every single shot. Closing this collection with the most sacred touch—the divine footprints of Lakshmi Ji, bringing grace and blessings to our home.
+           </p>
+          </div>
+          <button class="flip-btn">Flip</button>
+        </div>
+        <div class="flip-box-back" style="background-image: url('/Assets/Best.jpeg');">
+          <button class="flip-btn">Flip Back</button>
+        </div>
+      </div>
+     </div>
+
+     <div class="flip-box">
+      <div class="flip-box-inner">
+        <div class="flip-box-front">
+          <div>
+            <h3> ELEGANTLY UNHINGED 💌 </h3>
+            <p> Embrace pure, unfiltered joy. A truly beautiful portrait does not require a stiff smile or a perfect pout. Instead, lean into the chaos of a wide, crinkled laugh or a wonderfully goofy expression. These candid, happy faces show real personality, blending high-end style with the magnificent comedy of being human. </p>
+          </div>
+          <button class="flip-btn">Flip</button>
+        </div>
+        <div class="flip-box-back" style="background-image: url(/Assets/Funny.jpeg);">
+          <button class="flip-btn">Flip Back</button>
+        </div>
+      </div>
+     </div>
+
+     <div class="flip-box">
+      <div class="flip-box-inner">
+        <div class="flip-box-front">
+          <div>
+            <h3> THE SCRAPBOOK EDITION 💌 </h3>
+            <p> A pictures is a beautiful visual diary of unfiltered life. Free from rigid themes, these spontaneous snapshots capture the true essence of the ordinary days we often forget. They hold a unique charm, blending chaotic energy with quiet, aesthetic moments. Each uncurated frame tells its own story, turning everyday clutter into a meaningful scrapbook of memories worth keeping. </p>
+          </div>
+          <button class="flip-btn">Flip</button>
+        </div>
+        <div class="flip-box-back" style="background-image: url(/Assets/Random.jpeg);">
+          <button class="flip-btn">Flip Back</button>
+        </div>
+      </div>
+     </div>
+
+     <div class="flip-box">
+      <div class="flip-box-inner">
+        <div class="flip-box-front">
+          <div>
+            <h3> TOGETHER IN EVERY COLOR 💌 </h3>
+            <p> My world feels infinitely brighter because I am celebrating it with you. Every splash of color reminds me of the joy you bring into my life. Drenched in vibrant hues and sweet laughter, there is no one else I would rather share this beautiful mess with. You are, and always will be, my favorite shade of love. </p>
+          </div>
+          <button class="flip-btn">Flip</button>
+        </div>
+        <div class="flip-box-back" style="background-image: url(/Assets/Holi.jpeg);">
+          <button class="flip-btn">Flip Back</button>
+        </div>
+      </div>
+     </div>
+
+     <div class="flip-box">
+      <div class="flip-box-inner">
+        <div class="flip-box-front">
+          <div>
+            <h3> FREEDOM ON TWO WHEELS! 💌 </h3>
+            <p> Huge congratulations on your brand-new Activa DLX! Bringing home those stylish wheels on 14-Nov-2025 is such a wonderful milestone. I am so sorry I don't have a picture of you with your scooty yet, but I can already imagine how great you look on it! Wishing you endless safe and joyful journeys ahead. </p>
+          </div>
+          <button class="flip-btn">Flip</button>
+        </div>
+        <div class="flip-box-back" style="background-image: url(/Assets/Scooty.jpeg);">
+          <button class="flip-btn">Flip Back</button>
+        </div>
+      </div>
+     </div>
+
+     <div class="flip-box">
+      <div class="flip-box-inner">
+        <div class="flip-box-front">
+          <div>
+            <h3> YOUR SLAVE! </h3>
+            <p id="Birthday">Bacheee said to Khushi" I miss you a lot, I also feel a little jealous but you just come back Bachaa please.  You are the best thing that ever happened to me. I am so lucky to have you in my life. I will always be there for you, no matter what. You are my everything, my reason to smile, my reason to live. I can't wait to see you again and hug you tight. Until then, take care of yourself and know that I am always thinking of you. Bachaa! You deserve all the happiness in the world." I'm waiting for your response in every application.  There's a video below, watch it and let me know what you think.</p>
+          </div>
+          <button class="flip-btn">Flip</button>
+        </div>
+        <div class="flip-box-back" style="background-image: url(/Assets/Krishna\ Gupta.jpeg);">
+          <button class="flip-btn">Flip Back</button>
+        </div>
+      </div>
+     </div>
+    </div>
+ </div>
+
+  <div class="final">
+  <div class="container show-controls">
+      <div class="wrapper">
+        <div class="video-timeline">
+          <div class="progress-area">
+            <span>00:00</span>
+            <div class="progress-bar"></div>
+          </div>
+        </div>
+        <ul class="video-controls">
+          <li class="options left">
+            <button class="volume">
+              <i class="fa-solid fa-volume-high"></i>
+            </button>
+            <input type="range" min="0" max="1" step="any" />
+            <div class="video-timer">
+              <p class="current-time">00:00</p>
+              <p class="separator">/</p>
+              <p class="video-duration">00:00</p>
+            </div>
+          </li>
+          <li class="options center">
+            <button class="skip-backward">
+              <i class="fas fa-backward"></i>
+            </button>
+            <button class="play-pause"><i class="fas fa-play"></i></button>
+            <button class="skip-forward"><i class="fas fa-forward"></i></button>
+          </li>
+          <li class="options right">
+            <div class="playback-content">
+              <button class="playback-speed">
+                <span class="material-symbols-rounded">slow_motion_video</span>
+              </button>
+              <ul class="speed-options">
+                <li data-speed="2">2x</li>
+                <li data-speed="1.5">1.5x</li>
+                <li data-speed="1" class="active">Normal</li>
+                <li data-speed="0.75">0.75x</li>
+                <li data-speed="0.5">0.5x</li>
+              </ul>
+            </div>
+            <button class="pic-in-pic">
+              <span class="material-icons">picture_in_picture_alt</span>
+            </button>
+            <button class="fullscreen">
+              <i class="fa-solid fa-expand"></i>
+            </button>
+          </li>
+        </ul>
+      </div>
+      <video src="Assets/0424 (1).mp4"></video>
+    </div>
+  </div>
+
+  <div class="final2">
+   <h2> "Happy birthday to the one who makes ordinary moments extraordinary; I am so grateful you are in my life"</h2>
+   <h2 id="Once"> Happy Birthday Once Again! Bachaaa </h2>
+  </div>
+  
+  <footer>
+    <div class="foot-panel">
+      <a data-social="Snapchat" style="--accent-color: #FFB703" href="https://www.snapchat.com/@aaryaaaa_1402?share_id=sHmIUYuQEg8&locale=en-AU"><svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>Snapchat</title><path d="M12.206.793c.99 0 4.347.276 5.93 3.821.529 1.193.403 3.219.299 4.847l-.003.06c-.012.18-.022.345-.03.51.075.045.203.09.401.09.3-.016.659-.12 1.033-.301.165-.088.344-.104.464-.104.182 0 .359.029.509.09.45.149.734.479.734.838.015.449-.39.839-1.213 1.168-.089.029-.209.075-.344.119-.45.135-1.139.36-1.333.81-.09.224-.061.524.12.868l.015.015c.06.136 1.526 3.475 4.791 4.014.255.044.435.27.42.509 0 .075-.015.149-.045.225-.24.569-1.273.988-3.146 1.271-.059.091-.12.375-.164.57-.029.179-.074.36-.134.553-.076.271-.27.405-.555.405h-.03c-.135 0-.313-.031-.538-.074-.36-.075-.765-.135-1.273-.135-.3 0-.599.015-.913.074-.6.104-1.123.464-1.723.884-.853.599-1.826 1.288-3.294 1.288-.06 0-.119-.015-.18-.015h-.149c-1.468 0-2.427-.675-3.279-1.288-.599-.42-1.107-.779-1.707-.884-.314-.045-.629-.074-.928-.074-.54 0-.958.089-1.272.149-.211.043-.391.074-.54.074-.374 0-.523-.224-.583-.42-.061-.192-.09-.389-.135-.567-.046-.181-.105-.494-.166-.57-1.918-.222-2.95-.642-3.189-1.226-.031-.063-.052-.15-.055-.225-.015-.243.165-.465.42-.509 3.264-.54 4.73-3.879 4.791-4.02l.016-.029c.18-.345.224-.645.119-.869-.195-.434-.884-.658-1.332-.809-.121-.029-.24-.074-.346-.119-1.107-.435-1.257-.93-1.197-1.273.09-.479.674-.793 1.168-.793.146 0 .27.029.383.074.42.194.789.3 1.104.3.234 0 .384-.06.465-.105l-.046-.569c-.098-1.626-.225-3.651.307-4.837C7.392 1.077 10.739.807 11.727.807l.419-.015h.06z"/></svg></a>
+      <a data-social="Back to Top" style="--accent-color: #353535" href="http://happybirthdaykhushi.in/"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="m296-224-56-56 240-240 240 240-56 56-184-183-184 183Zm0-240-56-56 240-240 240 240-56 56-184-183-184 183Z"/></svg></a>
+      <a data-social="Instagram" style="--accent-color: #fe107c" href="https://www.instagram.com/_vijjaya_02/?utm_source=ig_web_button_share_sheet"><svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>Instagram</title><path d="M7.0301.084c-1.2768.0602-2.1487.264-2.911.5634-.7888.3075-1.4575.72-2.1228 1.3877-.6652.6677-1.075 1.3368-1.3802 2.127-.2954.7638-.4956 1.6365-.552 2.914-.0564 1.2775-.0689 1.6882-.0626 4.947.0062 3.2586.0206 3.6671.0825 4.9473.061 1.2765.264 2.1482.5635 2.9107.308.7889.72 1.4573 1.388 2.1228.6679.6655 1.3365 1.0743 2.1285 1.38.7632.295 1.6361.4961 2.9134.552 1.2773.056 1.6884.069 4.9462.0627 3.2578-.0062 3.668-.0207 4.9478-.0814 1.28-.0607 2.147-.2652 2.9098-.5633.7889-.3086 1.4578-.72 2.1228-1.3881.665-.6682 1.0745-1.3378 1.3795-2.1284.2957-.7632.4966-1.636.552-2.9124.056-1.2809.0692-1.6898.063-4.948-.0063-3.2583-.021-3.6668-.0817-4.9465-.0607-1.2797-.264-2.1487-.5633-2.9117-.3084-.7889-.72-1.4568-1.3876-2.1228C21.2982 1.33 20.628.9208 19.8378.6165 19.074.321 18.2017.1197 16.9244.0645 15.6471.0093 15.236-.005 11.977.0014 8.718.0076 8.31.0215 7.0301.0839m.1402 21.6932c-1.17-.0509-1.8053-.2453-2.2287-.408-.5606-.216-.96-.4771-1.3819-.895-.422-.4178-.6811-.8186-.9-1.378-.1644-.4234-.3624-1.058-.4171-2.228-.0595-1.2645-.072-1.6442-.079-4.848-.007-3.2037.0053-3.583.0607-4.848.05-1.169.2456-1.805.408-2.2282.216-.5613.4762-.96.895-1.3816.4188-.4217.8184-.6814 1.3783-.9003.423-.1651 1.0575-.3614 2.227-.4171 1.2655-.06 1.6447-.072 4.848-.079 3.2033-.007 3.5835.005 4.8495.0608 1.169.0508 1.8053.2445 2.228.408.5608.216.96.4754 1.3816.895.4217.4194.6816.8176.9005 1.3787.1653.4217.3617 1.056.4169 2.2263.0602 1.2655.0739 1.645.0796 4.848.0058 3.203-.0055 3.5834-.061 4.848-.051 1.17-.245 1.8055-.408 2.2294-.216.5604-.4763.96-.8954 1.3814-.419.4215-.8181.6811-1.3783.9-.4224.1649-1.0577.3617-2.2262.4174-1.2656.0595-1.6448.072-4.8493.079-3.2045.007-3.5825-.006-4.848-.0608M16.953 5.5864A1.44 1.44 0 1 0 18.39 4.144a1.44 1.44 0 0 0-1.437 1.4424M5.8385 12.012c.0067 3.4032 2.7706 6.1557 6.173 6.1493 3.4026-.0065 6.157-2.7701 6.1506-6.1733-.0065-3.4032-2.771-6.1565-6.174-6.1498-3.403.0067-6.156 2.771-6.1496 6.1738M8 12.0077a4 4 0 1 1 4.008 3.9921A3.9996 3.9996 0 0 1 8 12.0077"/></svg></a>
+      <a data-social="Threads" style="--accent-color: #003049" href="https://www.threads.com/@_vijjaya_02?hl=en"><svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>Threads</title><path d="M12.186 24h-.007c-3.581-.024-6.334-1.205-8.184-3.509C2.35 18.44 1.5 15.586 1.472 12.01v-.017c.03-3.579.879-6.43 2.525-8.482C5.845 1.205 8.6.024 12.18 0h.014c2.746.02 5.043.725 6.826 2.098 1.677 1.29 2.858 3.13 3.509 5.467l-2.04.569c-1.104-3.96-3.898-5.984-8.304-6.015-2.91.022-5.11.936-6.54 2.717C4.307 6.504 3.616 8.914 3.589 12c.027 3.086.718 5.496 2.057 7.164 1.43 1.783 3.631 2.698 6.54 2.717 2.623-.02 4.358-.631 5.8-2.045 1.647-1.613 1.618-3.593 1.09-4.798-.31-.71-.873-1.3-1.634-1.75-.192 1.352-.622 2.446-1.284 3.272-.886 1.102-2.14 1.704-3.73 1.79-1.202.065-2.361-.218-3.259-.801-1.063-.689-1.685-1.74-1.752-2.964-.065-1.19.408-2.285 1.33-3.082.88-.76 2.119-1.207 3.583-1.291a13.853 13.853 0 0 1 3.02.142c-.126-.742-.375-1.332-.75-1.757-.513-.586-1.308-.883-2.359-.89h-.029c-.844 0-1.992.232-2.721 1.32L7.734 7.847c.98-1.454 2.568-2.256 4.478-2.256h.044c3.194.02 5.097 1.975 5.287 5.388.108.046.216.094.321.142 1.49.7 2.58 1.761 3.154 3.07.797 1.82.871 4.79-1.548 7.158-1.85 1.81-4.094 2.628-7.277 2.65Zm1.003-11.69c-.242 0-.487.007-.739.021-1.836.103-2.98.946-2.916 2.143.067 1.256 1.452 1.839 2.784 1.767 1.224-.065 2.818-.543 3.086-3.71a10.5 10.5 0 0 0-2.215-.221z"/></svg></a>
+    </div>
+  </footer>
+    <script src="script.js"></script>
+</body>
+</html>
